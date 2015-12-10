@@ -1,0 +1,26 @@
+body{
+	background-color: black;
+	// background-color: white;
+
+	@include tablet-portrait-and-up{
+		overflow: hidden;
+	}
+}
+
+main{
+
+	// @include mobile-only{
+	// 	padding: $mobile-padding;
+	// }
+
+	.link-about-modal{
+		position: fixed;
+		top: 34px;
+		right: 40px;
+
+		@include mobile-only{
+			top: 16px;
+			right: $mobile-padding;
+		}
+	}
+}

@@ -1,0 +1,66 @@
+@font-face {
+	font-family: 'solano-bold';
+	src: url("../fonts/solano/Bold/solanogothicmvb-bold-webfont-eot.eot?#iefix") format('embedded-opentype'), url("../fonts/solano/Bold/solanogothicmvb-bold-webfont-woff.woff") format('woff'), url("../fonts/solano/Bold/solanogothicmvb-bold-webfont-ttf.ttf") format('truetype'), url("../fonts/solano/Bold/solanogothicmvb-bold-webfont-svg.svg#SolanoGothicMVB-Bd") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'icons';
+	src: url("../fonts/icons/jaeger_icons-eot.eot?#iefix") format('embedded-opentype'), url("../fonts/icons/jaeger_icons-woff.woff") format('woff'), url("../fonts/icons/jaeger_icons-ttf.ttf") format('truetype'), url("../fonts/icons/jaeger_icons-svg.svg#SolanoGothicMVB-Bd") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'apercu-italic';
+	src: url("../fonts/apercu/RegularItalic/apercu-regular-italic-pro-webfont-eot.eot?#iefix") format('embedded-opentype'), url("../fonts/apercu/RegularItalic/apercu-regular-italic-pro-webfont-woff.woff") format('woff'), url("../fonts/apercu/RegularItalic/apercu-regular-italic-pro-webfont-ttf.ttf") format('truetype'), url("../fonts/apercu/RegularItalic/apercu-regular-italic-pro-webfont-svg.svg#SolanoGothicMVB-Bd") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'apercu';
+	src: url("../fonts/apercu/Regular/apercu-regular-pro-webfont-eot.eot?#iefix") format('embedded-opentype'), url("../fonts/apercu/Regular/apercu-regular-pro-webfont-woff.woff") format('woff'), url("../fonts/apercu/Regular/apercu-regular-pro-webfont-ttf.ttf") format('truetype'), url("../fonts/apercu/Regular/apercu-regular-pro-webfont-svg.svg#SolanoGothicMVB-Bd") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2{
+	letter-spacing: -2px;
+	line-height: 41px;
+
+	@include mobile-only{
+		font-size: $font-size-mobile-h1;
+		line-height: $font-size-mobile-h1-lineheight;
+	}
+}
+
+h4{
+	font-size: 17px;
+	line-height: 21px;
+	letter-spacing: 0.1px;
+
+	@include mobile-landscape-only{
+		font-size: 15px;
+		line-height: 15px;
+	}
+}
+
+.font-apercu{
+	font-family: $font-family-apercu;
+	text-transform: none;
+}
+
+.font-icons{
+	font-family: 'icons';
+}
+
+.small-gray-text{
+	color: $gray-light;
+	font-size: 12px;
+	line-height: 14px;
+	// font-weight: bold;
+}

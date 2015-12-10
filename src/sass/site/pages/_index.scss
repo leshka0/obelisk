@@ -1,0 +1,115 @@
+#index{
+
+	position: relative;
+	z-index: 2;
+
+	@include tablet-portrait-and-up{
+		position: absolute;
+		@include square(100%);
+	}
+
+	@include mobile-only{
+		padding: $mobile-padding;
+
+		.btn-knockout.show-mobile{
+			display: inline-block;
+		}
+	}
+
+	section.intro{
+		
+		position: absolute;
+		width: 50%;
+		padding-bottom: $mobile-padding;
+
+		@include tablet-portrait-and-up{
+			@include center();
+		}
+
+		h1 span:first-child{
+			color: $orange;
+			display: block;
+		}
+
+		a.btn{
+			margin-right: 15px;
+			margin-top: 15px;
+		}
+	
+		@include mobile-only {
+			
+			top: 30px;
+			left: 0;
+			width: 100%;
+			position: relative;
+		}
+	}
+
+	@include tablet-portrait-and-up{
+		position: absolute;
+		@include square(100%);
+	}
+}
+
+body.phase-live #index{
+
+	section.intro{
+
+		@include tablet-portrait-and-up{
+			top: 77px;
+			@include transform(none);
+		}
+
+		@include tablet-only{
+			left: 50%;
+		}
+
+		@include desktop-and-up{
+			left: 35%;
+		}
+
+		h1 span:first-child{
+			max-width: 70%;
+		}
+
+		h1 span:nth-child(2){
+			display: block;
+			margin-top: 15px;
+			font-size: 31px;
+			max-width: 60%;
+			line-height: 30px;
+
+			@include mobile-only{
+				display: none;
+			}
+		}
+	}
+
+	#mobile-menu{
+
+		p.live-intro-text{
+			margin-top: 22px;
+		}
+
+		nav {
+			margin-top: 25px;
+
+			li{
+				margin-bottom: 12px;
+			}
+
+			a{
+				color: white;
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+body.phase-4 #index{
+
+	section.intro{
+		top: 20px;
+	}
+}
+

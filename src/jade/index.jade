@@ -1,0 +1,94 @@
+doctype
+ 
+head
+ 
+	meta(charset='utf-8')
+	title Obilisk
+	base(href="/")
+	meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+
+	link(rel="stylesheet", href="/css/share.css")
+	link(rel="stylesheet", href="/css/site.css")
+
+body
+	
+	main
+
+		#explore(ng-controller="exploreController", ng-show="show", ng-cloak)
+
+			div(id="webgl-container", ng-show="showWebgl", class="fade-to", ng-cloak)
+				canvas(monument-webgl, enabled="show", registrationopen="registrationOpen", userloggedin="userLoggedIn", ng-class="isHovering")
+
+	
+	if locals.production || locals.staging
+		script( src='/js/vendor.min.#{locals.FRONTEND_VERSION}.js' )
+	else
+		script( src='/js/vendor.js' )
+
+	script.
+		window.Promise = window.ES6Promise.Promise;
+
+		var getQueryParameterByName = function(name) {
+			var regex, results;
+			name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+			regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+			results = regex.exec(location.search);
+			if (results == null) {
+				return "";
+			} else {
+				return decodeURIComponent(results[1].replace(/\+/g, " "));
+			}
+		};
+
+		var webglSupported = (function() {
+			var e;
+			try {
+				return !!window.WebGLRenderingContext && !!document.createElement("canvas").getContext("experimental-webgl");
+			} catch (_error) {
+				e = _error;
+				return false;
+			}
+		})();
+		
+		if(getQueryParameterByName('fallback'))
+			webglSupported = false;
+
+		if(bowser.name == 'Internet Explorer')
+			webglSupported = false;
+			
+		var supported, windowHeight, windowWidth, md, mobile;
+
+		md = new MobileDetect(window.navigator.userAgent);
+
+		mobile = _.isString(md.mobile()) ? true : false;
+		
+		if(mobile) webglSupported = false;
+
+		if (mobile && md.phone() === 'iPhone') {
+			windowWidth = window.innerWidth;
+			windowHeight = window.innerHeight;
+			if (windowWidth > windowHeight) {
+				if (windowHeight >= 375) {
+					webglSupported = true;
+				}
+			} else {
+				if (windowWidth >= 375) {
+					webglSupported = true;
+				}
+			}
+		}
+				
+		var env = {
+			DEBUG: true,
+			GUI: false,
+			WEBGL: webglSupported,
+			LOCALE: "en",
+			PHASE: "1",
+			TIMELINE:{
+				START: '2015-10-22 00:00:00',
+				END: '2015-10-29 00:00:00'
+			},
+			COUNTDOWN: '2015-10-29'
+		}
+
+	script( src='/js/app.js' )

@@ -1,0 +1,42 @@
+// Override Bootstrap variables in this file, e.g.
+
+$font-size-h1: 43px;
+$font-size-h2: 43px;
+$font-size-base: 14px;
+
+$font-size-mobile-h1: 32px;
+$font-size-mobile-h1-lineheight: 31px;
+
+$font-family-sans-serif: "solano-bold";
+$font-family-apercu: "apercu";
+$orange: #ff4600;
+$gray: #989898;
+$form-background-gray: #232323;
+// $line-height-base: 1.2;
+$gray-border: #363636;
+$gray-light: #9b9b9b;
+
+$link-color: $orange;
+$text-color: white;
+
+$modal-content-bg: transparent;
+$modal-inner-padding: 0;
+$modal-title-padding: 0;
+$modal-content-border-color: transparent;
+$modal-content-fallback-border-color: transparent;
+$modal-header-border-color: transparent;
+$modal-lg: 500px;
+$modal-md: $modal-lg;
+$modal-backdrop-opacity: 0.8;
+
+// $mobile-width: 658px;
+// $tablet-width: 972px;
+// $desktop-width: 1280px;
+
+$mq-mobile-portrait		: 320px !default;
+$mq-mobile-landscape	: 765px !default;
+$mq-tablet-portrait		: 768px !default;
+$mq-tablet-landscape	: 1024px !default;
+$mq-desktop				: 1382px !default;
+
+$mobile-padding: 8px;

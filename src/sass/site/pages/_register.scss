@@ -1,0 +1,314 @@
+#register{
+
+	@include fix3D();
+
+	#register-share{
+		margin-top: 20px;
+	}
+	
+	section.intro{
+
+		@include fix3D();
+
+		@include tablet-portrait-and-up{
+			top: 50%;
+			width: 50%;
+			max-width: 665px;
+			position: absolute;
+			@include center();
+			z-index: 10;
+		}
+
+		& > .btn-nav{
+			margin-bottom: 10px;
+		}
+
+		h2{
+			margin-top: 16px;
+		}
+
+		h2 span:nth-child(2){
+			color: $orange;
+		}
+
+		#pictureFormNg .submit-photo{
+			@include hide();
+		}
+
+		.facebook-connect{
+			.left{
+				height: 70px;
+			}
+		}
+
+		.left, 
+		.right{
+			width: 50%;
+		}
+
+		.left{
+			float: left;
+		}
+
+		.right{
+			float: right;
+		}
+
+		.register-form{
+			.left,
+			.right{
+				// margin-top: 9%;
+				position: relative;
+			}
+
+			.preview{
+				display: none;
+			}
+
+			.left{
+
+				@include mobile-portrait-only{
+					padding-top: 47px;	
+				}
+
+				.btn-file{
+					position: absolute;
+					bottom: 0;
+					@include horizontal-center();
+				}
+
+				.error, .size{
+					position: absolute;
+					bottom: -39px;
+					width: 100%;
+					text-align: center;
+				}
+
+				.error{
+					color: red;
+				}
+			}
+
+			.right{
+				p.facebook-info{
+					margin-bottom: 5px;
+				}
+
+				form{
+					margin-top: 30px;
+
+					label{
+						margin-bottom: 0;
+					}
+
+					.form-group{
+						width: 90%;
+					}
+
+					#submit{
+						position: absolute;
+						right: 11%;
+						bottom: 0;
+					}
+				}
+			}
+		}
+
+		.success-state{
+			@include fix3D();
+			h4{
+				margin-top: 20px;
+			}
+		}
+
+		@include desktop-and-up {
+
+			.register-form{
+				.left,
+				.right{
+					height: 300px;
+				}
+			}
+		}
+
+		@include tablet-only {
+			width: 65%;
+
+			.register-form{
+				.left,
+				.right{
+					height: 300px;
+				}
+			}
+		}
+
+		@include mobile-only {
+
+			width: 100%;
+			position: relative;
+
+			&.register-state,
+			&.success-state{
+				top: 0;
+				padding: $mobile-padding;
+			}
+
+			&.success-state{
+				h1{
+					margin-bottom: 30px;
+				}
+			}
+
+			header{
+				padding: 8px 0 2px 0;
+				border-bottom: 1px solid $gray-border;
+			}
+
+			h2{
+				margin-top: 0;
+				// margin-left: $mobile-padding;
+				display: inline-block;
+			}
+
+			.left,
+			.right{
+				width: 100%;
+				height: auto;
+				float: left;
+			}
+
+			.facebook-connect{
+				text-align: center;
+				margin-top: 220px;
+
+				&.mobile-state-2{
+					margin-top: 20px;
+				}
+
+				@include mobile-landscape-only{
+					margin-top: 22%;
+				}
+
+				.left{
+					height: 0;
+				}
+			}
+
+			.or{
+				text-align: center;
+				margin: 5px 0;
+			}
+
+			.register-form{
+
+				&.mobile-state-1{
+
+					& > .left{
+
+						@include mobile-portrait-only{
+							height: 100px;
+						}
+
+						margin-top: 0;
+					}
+
+					.right{
+
+						.form-group,
+						.checkbox{
+							display: none;
+						}
+					}
+				}
+
+				&.mobile-state-2{
+
+					& > .right{
+						height: 300px;
+					}
+
+					.left{
+						display: none;
+					}
+				}
+
+				.left{
+
+					text-align: center;
+					height: auto;
+
+					.error, .size{
+						bottom: 40px;
+					}
+
+				}
+
+				.right form{
+
+					margin-top: 0;
+
+					.btn-nav{
+						position: absolute;
+						bottom: $mobile-padding;
+						left: 0;
+					}
+
+					#submit,
+					.btn-next{
+						left: auto;
+						right: 0;
+					}
+
+					#submit{
+						bottom: $mobile-padding;
+					}
+
+					.form-group,
+					.checkbox{
+						margin-left: auto;
+						margin-right: auto;
+						width: 75%;
+					}
+				}
+
+				.btn-file{
+					position: absolute;
+					bottom: auto;
+					top: 0;
+					width: 200px;
+
+					&:active{
+						box-shadow: none;
+					}
+
+					@include mobile-portrait-only{
+						
+						&, #profile{
+							height: 130px;
+						}
+					}
+					
+					@include mobile-landscape-only{
+						height: 50px;
+					}
+					
+					background: transparent;
+					color: white;
+					right: auto;
+					left: 50%;
+					@include horizontal-center();
+
+					span{
+						display: block;
+						@include horizontal-center();
+						position: relative;
+					}
+				}
+
+				// .right{
+				// 	display: none;
+				// }
+			}
+		}
+	}
+}

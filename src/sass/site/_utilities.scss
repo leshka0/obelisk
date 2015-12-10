@@ -1,0 +1,20 @@
+.hide-mobile{
+	@include mobile-only{
+		display: none;
+	}
+}
+
+.show-mobile{
+	display: none;
+	@include mobile-only{
+		display: block;
+	}
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}

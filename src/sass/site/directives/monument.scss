@@ -1,0 +1,198 @@
+#webgl-container{
+
+	canvas{
+		&.hover{
+			cursor: pointer;
+		}
+	}
+}
+
+img[src] {
+	display: block;
+}
+
+img[src=""] {
+    display: none;
+}
+
+.grab{
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+}
+
+.dragging{
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+}
+
+#fallback-container{
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+	@include square(100%);
+	@include transition(opacity 0.5s ease);
+
+	.object{
+		// border: 1px solid red;
+		transform-origin: 50%;
+		z-index: 1;
+		float: left;
+		position: relative;
+		@include fix3D();
+		img{
+			pointer-events: none;
+			@include user-select-disable();
+			width: 100%;
+		}
+
+		@include desktop-and-up{
+			width: 10%;
+		}
+
+		@include desktop-only{
+			width: 10%;
+		}
+
+		@include tablet-only{
+			width: 10%;
+		}
+
+		@include mobile-only{
+			width: (100% / 3);
+		}
+
+		@include mobile-landscape-only{
+			width: 20%;
+		}
+	}
+
+	.phase-2-background{
+		@include square(100%);
+		position: absolute;	
+		background-image: url('/images/fallback-monument-background.jpg');
+		background-position: bottom right;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+
+		@include transition(opacity 0.5s ease 1s);
+
+		&.ng-hide{
+			@include transition-delay(0s);
+			opacity: 0;
+		}
+
+		@include mobile-only{
+			opacity: 0.6;
+		}
+	}
+
+	#infiniteDrag{
+		@include square(100%);
+		position: absolute;	
+
+		&.device{
+			overflow-y: scroll;
+			-webkit-overflow-scrolling: touch;
+		}
+
+		.objects-container{
+			position: relative;
+		}
+	}
+}
+
+#bottle-zoom,
+#particle-zoom{
+	@include hide();
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+
+	.content{
+		position: relative;
+	}
+
+	.mask{
+		// background-color: rgba(255, 0, 0, 0.3);
+		position: absolute;
+		opacity: 0.6;
+		top: 50%;
+		left: 50%;
+		@include center();
+	}
+}
+
+#particle-zoom {
+
+	// left: 50%;
+	// top: -80px;
+	@include center();
+
+	.mask{
+		width: 154px;
+		height: 148px;
+		// -webkit-clip-path: ellipse(75px 74px at 50% 76px);
+	}
+}
+
+#bottle-zoom {
+	
+	// left: 50%;
+	// top: -80px;
+	@include center();
+
+	.mask{
+		top: 198px;
+		// left: 118px;
+		left: 49%;
+		max-width: 256px;
+	}
+}
+
+#register{
+
+	#bottle-zoom{
+
+		@include tablet-portrait-and-up{
+			top: 30%;
+		}
+
+		@include mobile-only{
+			top: -140px;
+		}
+	}
+
+	#particle-zoom{
+
+		@include tablet-portrait-and-up{
+			top: 30%;
+		}
+
+		@include mobile-only{
+			top: -140px;
+		}
+	}
+}
+
+.obelisk-user{
+
+	#bottle-zoom,
+	#particle-zoom{
+
+		@include mobile-portrait-only{
+			top: 42%;
+		}
+
+		@include mobile-landscape-only{
+			top: 38%;
+		}
+
+		@include tablet-portrait-and-up{
+			left: 30%;
+		}
+	}
+}

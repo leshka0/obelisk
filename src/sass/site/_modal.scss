@@ -1,0 +1,49 @@
+.modal{
+	color: white;
+
+	top: -62px !important;
+
+	@include mobile-only{
+		.modal-dialog{
+			margin-top: 74px !important;
+		}
+	}
+
+	h2{
+		margin-top: 16px;
+	}
+
+	.btn-nav{
+		opacity: 1;
+	}
+
+	p{
+		color: $gray;
+		margin-top: 20px;
+	}
+
+	a.btn-default{
+		margin-top: 20px;
+	}
+
+	a.link{
+		color: white;
+		text-decoration: underline;
+		font-weight: bold;
+	}
+
+	ul{
+		list-style-type: none;
+		padding: 0;
+		margin-top: 20px;
+
+		li{
+			margin-bottom: 10px;
+		}
+
+		li span{
+			color: $orange;
+			margin-right: 5px;
+		}
+	}
+}

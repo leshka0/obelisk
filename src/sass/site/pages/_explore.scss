@@ -1,0 +1,279 @@
+#explore{
+
+	#my-bottle-btn{
+		position: absolute;
+		top: 52px;
+		right: 70px;
+		z-index: 10;
+
+		@include mobile-only{
+			top: 32px;
+			right: 39px;
+		}
+	}
+
+	#explore-back-btn{
+		position: absolute;
+		top: 34px;
+		left: 20px;
+		z-index: 10;
+
+		@include mobile-only{
+			top: 20px;
+		}
+	}
+
+
+
+	@include mobile-only{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&[ng\:cloak],
+	&[ng-cloak],
+	&[data-ng-cloak],
+	&[x-ng-cloak],
+	&.ng-cloak,
+	&.x-ng-cloak,
+	&.ng-hide:not(.ng-hide-animate){
+		display: block !important;
+		opacity: 1;
+	}
+
+	#popup-share{
+		margin-top: 20px;
+	}
+
+	section.intro{
+
+		text-align: center;
+		position: absolute;
+		bottom: 5%;
+		z-index: 2;
+
+		@include mobile-only{
+			bottom: 4%;
+		}
+
+		@include horizontal-center();
+
+		h1{
+			font-size: 26px;
+			letter-spacing: -1.5px;
+			line-height: 24px;
+			pointer-events: none;
+			max-width: 80%;
+			margin: 0 auto;
+			@include user-select-disable();
+		}
+
+		h1 span:first-child{
+			display: block;
+			color: $orange;
+		}
+
+		.btn{
+			margin-top: 14px;
+		}
+
+		.btn-knockout{
+			margin-left: 18px;
+		}
+	}
+
+	section.obelisk-user{
+
+		position: absolute;
+		z-index: 2;
+
+		@include size(765px, 300px);
+
+		@include tablet-portrait-and-up{
+			@include center();
+		}
+
+		.arrow{
+			font-size: 50px;
+			top: 125px;
+			padding: 20px;
+			position: absolute;
+			display: block;
+			z-index: 10;
+
+			$offset: -16px;
+
+			&.arrow-left{
+				left: $offset;
+			}
+
+			&.arrow-right{
+				right: $offset;
+			}
+		}
+
+		.right{
+			width: 50%;
+			left: 50%;
+			position: relative;
+			// background-color: rgba(0, 255, 0, 0.3);
+			padding-top: 65px;
+			float: none;
+
+			h3{
+				font-size: 44px;
+				margin-top: 23px;
+				margin-bottom: 0;
+			}
+
+			h4{
+				margin-top: 20px;
+			}
+		}
+	}
+
+	.tooltip-user,
+	.tooltip-claim{
+
+		position: absolute;
+		z-index: 10;
+		top: 50%;
+		left: 50%;
+		opacity: 1 !important;
+		padding: 0;
+		min-width: 110px;
+
+		&.right{
+			@include transform(translateX(10%));
+		}
+
+		&.left{
+			@include transform(translateX(-110%));
+		}
+
+		&.fallback{
+			@include transform(translateX(-50%));
+			min-width: 110px;
+		}
+
+		.tooltip-inner{
+			border-radius: 0;
+			padding: 0;
+			text-align: center;
+			background-color: inherit;
+
+			h4{
+				margin: 0;
+				padding: 2px 10px 0 10px;
+				letter-spacing: 0.1px;
+				font-size: 17px;
+				line-height: 21px;
+			}
+
+			p{
+				margin-bottom: 0;
+				display: inline;
+				padding: 0 10px 4px 10px;
+			}
+
+			h4, p{
+				@include user-select-disable();
+			}
+		}
+	}
+
+	.tooltip-user{
+		// top: 311px !important;
+		// left: 471px !important;
+		h4, p{
+			background-color: black;
+			color: white;
+		}
+	}
+
+	.tooltip-claim{
+		// top: 589px !important;
+		// left: 551px !important;
+
+		.tooltip-inner{
+			background-color: $orange;
+		}
+	}
+
+	@include mobile-only{
+
+		h1{
+			font-size: 19px;
+			line-height: 19px;
+		}
+
+		.btn{
+			margin-top: 0;
+		}
+
+		section.obelisk-user{
+
+			transform: none;
+			left: 0;
+			top: 0;
+			@include square(100%);
+
+			.arrow{
+				font-size: 40px;
+				top: 42%;
+
+				$offset: 12px;
+
+				&.arrow-left{
+					left: $offset;
+				}
+
+				&.arrow-right{
+					right: $offset;
+				}
+			}
+
+			.right{
+				padding: $mobile-padding;
+				padding-top: 10px;
+				left: 0;
+				@include square(100%);
+
+				.user{
+
+					bottom: 10%;
+					position: absolute;
+					text-align: center;
+					@include horizontal-center();
+
+					h3{
+						font-size: 39px;
+					}
+				}
+
+				@include mobile-landscape-only{
+
+					.user{
+
+						bottom: 5%;
+
+						h3{
+							font-size: 22px;
+						}
+
+						h4{
+							margin-top: 5px;
+						}
+
+						p{
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

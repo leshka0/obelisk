@@ -1,0 +1,39 @@
+{
+  "name": "surface-division",
+  "version": "0.0.0",
+  "authors": [
+    "info@davidpaulrosser.co.uk <davidpaulrosser>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "dat-gui": "~0.5.1",
+    "gsap": "~1.17.0",
+    "jquery": "~2.1.4",
+    "angular": "~1.4.0",
+    "angular-aria": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "ngAnimate": "*",
+    "angular-animate": "~1.4.1",
+    "bootstrap": "~3.3.5",
+    "angular-xml2json": "~0.0.1",
+    "ngUpload": "~0.5.17",
+    "angular-facebook": "~0.2.3",
+    "threejs": "r73",
+    "ng-lodash": "~0.2.3",
+    "moment": "~2.10.3",
+    "happens": "~0.6.0",
+    "hammerjs": "~2.0.4",
+    "lodash": "~3.10.0",
+    "angular-mobile-detect": "*",
+    "angular-tweet-filter": "*",
+    "angular-sanitize": "~1.4.3",
+    "es6-promise": "~2.2.0"
+  }
+}

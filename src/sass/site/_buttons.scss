@@ -1,0 +1,108 @@
+.btn-file {
+	position: relative;
+	overflow: hidden;
+}
+.btn-file input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	// min-width: 100%;
+	// min-height: 100%;
+	font-size: 100px;
+	text-align: right;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	outline: none;
+	background: white;
+	cursor: inherit;
+	display: block;
+}
+
+.btn{
+
+	$padding: 2px 15px;
+
+	border-radius: 0;
+	border: 0;
+	color: white;
+	padding: $padding;
+	font-size: 17px;
+	line-height: 21px;
+	color: black;
+	letter-spacing: 0.1px;
+
+	&.btn-default{
+		background-color: $orange;
+
+		&:hover{
+			color: white;
+		}
+	}
+
+	&.btn-knockout{
+		background: transparent;
+		color: $orange;
+		border: 2px solid $orange;
+		padding-top: 0;
+		padding-bottom: 0;
+
+		&:hover{
+			border-color: white;
+			color: white;
+		}
+	}
+
+	&.btn-nav{
+		background: $gray;
+		// opacity: 1;
+		color: black;
+		text-shadow: none;
+		padding: $padding;
+		text-transform: uppercase;
+		float: none;
+		font-weight: normal;
+
+		&:hover{
+			color: white;
+		}
+
+		&:focus{
+			outline: none;
+		}
+	}
+
+	&.btn-play{
+		border-radius: 50%;
+		background-color: $orange;
+		@include square(50px);
+	}
+}
+
+a:hover,
+a:focus,
+a:active{
+	text-decoration: none;
+}
+
+a:focus{
+	outline: 0;
+}
+
+a.link-about-modal{
+	color: white;
+	letter-spacing: 0.25px;
+	z-index: 10000;
+}
+
+// facebook
+button#facebook-login{
+	padding: 0;
+	border: none;
+}
+
+button#submit{
+	&.disabled,
+  	&[disabled]{
+  		background: $gray;
+  	}
+}

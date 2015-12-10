@@ -1,0 +1,21 @@
+.fieldValid {
+	border: 1px solid #00ff00;
+}
+.fieldInvalid {
+	border: 1px solid #ff0000;
+}
+
+.form-control{
+	box-shadow: none;
+	border-radius: 0;
+	outline: 0;
+	padding: 1px 10px;
+	border: 0;
+	height: 26px;
+	background: $form-background-gray;
+	color: white;
+}
+
+.form-group{
+	margin-bottom: 10px;
+}

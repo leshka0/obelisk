@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+
+	<!-- Data -->
+	<downloadPDFUrl><![CDATA[/downloads/MdF-DRUCK-TEST.pdf]]></downloadPDFUrl>
+	<googleMapsLocationUrl><![CDATA[https://www.google.co.uk/maps/place/Hamburg,+Germany/@53.558572,9.9278215,10z]]></googleMapsLocationUrl>
+	<registerFormTermsUrl><![CDATA[http://www.jaegermeister.de/de-de/impressum/]]></registerFormTermsUrl>
+	<youtubeVideoId><![CDATA[mbA2upjyGrw]]></youtubeVideoId>
+	<youtubeVideoName><![CDATA[Jager video]]></youtubeVideoName>
+	<myBottle><![CDATA[Meine Flasche]]></myBottle>
+
+	<!-- Generic -->
+	<prevBtn><![CDATA[Zurück]]></prevBtn>
+	<backBtn><![CDATA[Zurück]]></backBtn>
+	<nextBtn><![CDATA[Weiter]]></nextBtn>
+	<downloadPDFBtn><![CDATA[PDF herunterladen]]></downloadPDFBtn>
+	<followBtn><![CDATA[Folgen]]></followBtn>
+	<seeOnTumblrBtn><![CDATA[Auf Tumblr anschauen]]></seeOnTumblrBtn>
+
+	<!-- Home -->
+	<homeIntro1Phase1><![CDATA[Wir brauchen Euch!]]></homeIntro1Phase1>
+	<homeIntro2Phase1><![CDATA[Denn nur mit Eurer Hilfe können wir das Monument der Freundschaft bauen.]]></homeIntro2Phase1>
+	<homeIntro1Phase2><![CDATA[Das Monument der<br/>Freundschaft]]></homeIntro1Phase2>
+	<homeIntro2Phase2><![CDATA[Macht mit und werdet Teil von etwas Großartigem!]]></homeIntro2Phase2>
+
+	<homeJoinBtn><![CDATA[Jetzt mitmachen!]]></homeJoinBtn>
+	<homeExploreBtn><![CDATA[#MdF entdecken]]></homeExploreBtn>
+	<homeBackToBtn><![CDATA[Zurück nach Hause]]></homeBackToBtn>
+	<homeAboutBtn><![CDATA[Was ist das #MdF?]]></homeAboutBtn>
+	<homeModalTitle><![CDATA[Was ist das #MdF?]]></homeModalTitle>
+	<homeModalBody1><![CDATA[Jägermeister allein baut kein Monument der Freundschaft. Zusammen mit unseren Fans aber schon! Und dafür brauchen wir Euch. Setzt gemeinsam mit uns ein Zeichen für die Freundschaft! Wie das geht?]]></homeModalBody1>
+	<homeModalBody2><![CDATA[Ehrenplatz <a class="link" href="#" modal-link-join data-target="#aboutModal" data-toggle="modal">hier</a> aussuchen und gemeinsam Teil von etwas Großartigem werden!]]></homeModalBody2>
+	<homeModalBody3><![CDATA[Tauscht Eure leeren 0,7l- gegen volle 0,1l-Jägermeister-Flaschen (Nur so lange der Vorrat reicht.).]]></homeModalBody3>
+	<homeModalBody4><![CDATA[<a id="trackPDFDownloadLink" class="link" href="/downloads/MdF-DRUCK-TEST.pdf" target="_blank" download>Hier</a> findet ihr mehr Infos. PDF oder Flyer Download/ oder Send a bottle.]]></homeModalBody4>
+
+
+	<!-- Join -->
+	<joinIntro1><![CDATA[Werde Teil des Monuments der Freundschaft und feier mit uns!]]></joinIntro1>
+	<joinIntro2><![CDATA[]]></joinIntro2>
+	<joinIntro3><![CDATA[]]></joinIntro3>
+
+	<joinSendText><![CDATA[Wenn der Hirsch ruft, bist Du am Start. Sei schnell und schnapp Dir Deinen Ehrenplatz!]]></joinSendText>
+	<joinSendBtn><![CDATA[Flasche einschicken]]></joinSendBtn>
+	<joinClaimSpotText><![CDATA[Flasche leer? Flasche her! Um das #MdF in XYZ bauen, brauchen wir Eure Unterstützung!]]></joinClaimSpotText>
+	<joinClaimSpotBtn><![CDATA[Jetzt mitmachen!]]></joinClaimSpotBtn>
+	<joinEnterCodeText><![CDATA[]]></joinEnterCodeText>
+	<joinEnterCodeBtn><![CDATA[]]></joinEnterCodeBtn>
+
+	<joinSendBottleModalTitle><![CDATA[Flasche leer? Flasche her!]]></joinSendBottleModalTitle>
+	<joinSendBottleModalBody1><![CDATA[Schickt uns Eure leeren 0,7L-Jägermeister-Flaschen. Als Dankeschön werdet Ihr nicht nur Teil von etwas Großartigem, sondern erhaltet auch eine Sonderedition unserer 0,1L-Flasche.]]></joinSendBottleModalBody1>
+	<joinSendBottleModalBody2><![CDATA[So geht’s:]]></joinSendBottleModalBody2>
+	<joinSendBottleModalBody3><![CDATA[PDF ausdrucken und ausfüllen]]></joinSendBottleModalBody3>
+	<joinSendBottleModalBody4><![CDATA[Leere Flasche ab zur Post (Adresse findet Ihr im PDF)]]></joinSendBottleModalBody4>
+	<joinSendBottleModalBody5><![CDATA[Auf die exklusive Sonderedition freuen!]]></joinSendBottleModalBody5>
+
+	<!-- Explore -->
+	<exploreIntro1><![CDATA[Wir brauchen Euch!]]></exploreIntro1>
+	<exploreIntro2><![CDATA[Denn nur mit Eurer Hilfe können wir das Monument der Freundschaft bauen.]]></exploreIntro2>
+
+	<exploreIntroRegistered1><![CDATA[Danke]]></exploreIntroRegistered1>
+	<exploreIntroRegistered2><![CDATA[Für die Teilnahme und hilft uns, etwas Großes zu schaffen]]></exploreIntroRegistered2>
+
+	<exploreTooltipClaim><![CDATA[Jetzt mitmachen!]]></exploreTooltipClaim>
+
+	<!-- Register -->
+	<registerIntro><![CDATA[Fast geschafft]]></registerIntro>
+	<registerFormFacebookText><![CDATA[Abkürzung nehmen]]></registerFormFacebookText>
+	<registerFormFirstname><![CDATA[Vorname]]></registerFormFirstname>
+	<registerFormLastname><![CDATA[Nachname]]></registerFormLastname>
+	<registerFormCity><![CDATA[Stadt]]></registerFormCity>
+	<registerFormEmail><![CDATA[E-Mail]]></registerFormEmail>
+	<registerFormAgree><![CDATA[Ich akzeptiere die]]></registerFormAgree>
+	<registerFormAgreeButton><![CDATA[Teilnahmebedingungen]]></registerFormAgreeButton>
+	<registerFormFacebookConnectBtn><![CDATA[FB-Connect]]></registerFormFacebookConnectBtn>
+	<registerFormSubmitBtn><![CDATA[EINREICHEN]]></registerFormSubmitBtn>
+	<registerFormUploadPhotoBtn><![CDATA[Foto hochladen]]></registerFormUploadPhotoBtn>
+	<registerFormChangePhotoBtn><![CDATA[Foto ändern]]></registerFormChangePhotoBtn>
+	<registerSuccessIntro><![CDATA[Danke! Du bist dabei!]]></registerSuccessIntro>
+	<registerExistsIntro><![CDATA[Vielen Dank für deine Teilnahme am Monument!]]></registerExistsIntro>
+	<registerSuccessText><![CDATA[Durch Deine Hilfe kann jetzt etwas Großartiges entstehen. Sieh Dir an, wo sich Dein Platz auf dem Monument befindet und teile ihn mit Deinen Freunden!]]></registerSuccessText>
+	<registerExistsText><![CDATA[Es scheint, als hättest du Dir bereits einen Platz gesichert. Wenn du uns doppelt unterstützen möchtest, dann sag am Besten deinen Freunden Bescheid. Nur gemeinsam können wir es schaffen!]]></registerExistsText>
+	<registerSuccessSpotBtn><![CDATA[Jetzt anschauen]]></registerSuccessSpotBtn>
+	<registerShareSpotBtn><![CDATA[Teilen]]></registerShareSpotBtn>
+	<registerMobileOr><![CDATA[oder]]></registerMobileOr>
+	<registerFormErrorPhoto><![CDATA[Dein Foto ist leider zu gross.]]></registerFormErrorPhoto>
+	<registerFormPhotoSize><![CDATA[Max. Größe 2MB]]></registerFormPhotoSize>
+
+	<!-- Claim -->
+	<claimIntro><![CDATA[Fast geschafft]]></claimIntro>
+
+	<!-- Docs -->
+	<docsLoginTitle><![CDATA[Login to API]]></docsLoginTitle>
+	<docsLoginText><![CDATA[Make sure your logged into Facebook and Instagram in order for the database to successfully fetch the posts.]]></docsLoginText>
+	<docsLoginBtn><![CDATA[Login]]></docsLoginBtn>
+
+	<docsObeliskFeed><![CDATA[Obelisk Feed]]></docsObeliskFeed>
+	<docsObeliskFeedPreviewBtn><![CDATA[Preview feed]]></docsObeliskFeedPreviewBtn>
+	<docsObeliskFeedLiveBtn><![CDATA[API feed]]></docsObeliskFeedLiveBtn>
+
+	<docsSocialFeed><![CDATA[Social Feed]]></docsSocialFeed>
+	<docsSocialFeedPreviewBtn><![CDATA[Preview feed]]></docsSocialFeedPreviewBtn>
+	<docsSocialFeedLiveBtn><![CDATA[API feed]]></docsSocialFeedLiveBtn>
+
+	<!-- Share -->
+	<shareControlTitle><![CDATA[Das Jägermeister #MDF]]></shareControlTitle>
+	<shareControlDescription><![CDATA[Ich allein baue nicht das Monument der Freundschaft. Wir schon! Jetzt mitmachen und Teil von etwas Großem werden! #MdF]]></shareControlDescription>
+	<shareFacebook><![CDATA[Auf Facebook teilen]]></shareFacebook>
+	<shareEmail><![CDATA[Via E-Mail teilen]]></shareEmail>
+	<shareWhatsapp><![CDATA[Auf Whatsapp teilen]]></shareWhatsapp>
+	<shareTwitter><![CDATA[Auf Twitter teilen]]></shareTwitter>
+	<sharePinterest><![CDATA[Auf Pinterest teilen]]></sharePinterest>
+	<shareGoogle><![CDATA[Auf Google+ teilen]]></shareGoogle>
+	<shareText><![CDATA[Teilen]]></shareText>
+
+	<!-- Sidebar ( phase2+ ) -->
+	<sidebarNavWhere><![CDATA[Wo?]]></sidebarNavWhere>
+	<sidebarNavNews><![CDATA[News]]></sidebarNavNews>
+	<sidebarNavLive><![CDATA[Live Stream]]></sidebarNavLive>
+	<sidebarNavRightNow><![CDATA[Jetzt am #MDF]]></sidebarNavRightNow>
+	<sidebarNavThisHappened><![CDATA[Das habt Ihr möglich gemacht!]]></sidebarNavThisHappened>
+
+	<sidebarWhereTitle1><![CDATA[In]]></sidebarWhereTitle1>
+	<sidebarWhereTitle2><![CDATA[Tagen geht es los!]]></sidebarWhereTitle2>
+
+	<sidebarWhereText1><![CDATA[Wo?]]></sidebarWhereText1>
+	<sidebarWhereText2><![CDATA[Central Park <br/> Hamburg. Germany]]></sidebarWhereText2>
+	<sidebarWhereMapText><![CDATA[In Google Maps öffnen]]></sidebarWhereMapText>
+
+	<sidebarNewsTitle1><![CDATA[News]]></sidebarNewsTitle1>
+
+	<sidebarLiveStreamTitle1><![CDATA[Live Stream]]></sidebarLiveStreamTitle1>
+	<sidebarLiveStreamPlaceholderText><![CDATA[Live anschauen]]></sidebarLiveStreamPlaceholderText>
+
+	<sidebarRightNowTitle1><![CDATA[Jetzt am #MDF]]></sidebarRightNowTitle1>
+
+	<sidebarThisHappenedTitle1><![CDATA[Das war am<br/>#MDF los]]></sidebarThisHappenedTitle1>
+	<sidebarPlayVideo><![CDATA[Video abspielen]]></sidebarPlayVideo>
+
+</dictionary>
